@@ -1,0 +1,40 @@
+{
+  "api_config": {
+    "default_host": "192.168.1.14",
+    "default_port": 17080,
+    "timeout": 30,
+    "max_retries": 3
+  },
+  "servers": [
+    {
+      "name": "server1",
+      "host": "123.123.123.123",
+      "port": 20300,
+      "password": "your_rcon_password1",
+      "enabled": true,
+      "api_host": "192.168.1.14",
+      "api_port": 17080
+    },
+    {
+      "name": "server2", 
+      "host": "192.168.1.100",
+      "port": 20300,
+      "password": "your_rcon_password2",
+      "enabled": false,
+      "api_host": "192.168.1.14",
+      "api_port": 17080
+    }
+  ],
+  "log_settings": {
+    "collection_interval": 5,
+    "save_interval": 60,
+    "logs_directory": "logs",
+    "max_retries": 5,
+    "retry_delay": 15
+  },
+  "logging": {
+    "level": "DEBUG",
+    "format": "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+    "file": "hll_log_collector.log"
+  }
+}
